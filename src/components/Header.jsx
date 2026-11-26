@@ -10,7 +10,7 @@ const Header = () => {
           <Navbar.Brand href="#home">
             <GraduationCapIcon
               style={{ marginRight: '3px' }}
-              color="#2926DF"
+              color="#0066ff"
               weight="fill"
               size="25" />{' '}
             Censo Escolar
