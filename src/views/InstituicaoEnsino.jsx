@@ -39,15 +39,12 @@ const InstituicaoEnsino = () => {
     }
 
     try {
-      const response = await fetch(
-        `http://localhost:5000/instituicoesensino/${encodeURIComponent(id)}`,
-        {
-          method: 'DELETE',
-        }
-      );
+      const response = await fetch(`http://localhost:5000/instituicoesensino/${encodeURIComponent(id)}`, {
+        method: 'DELETE',
+      });
 
       if (response.ok) {
-        buscarDadosDaIE();
+        await buscarDadosDaIE();
       } else {
         console.error('Erro ao deletar na API:', response.status);
       }
